@@ -1,0 +1,26 @@
+<input type="text" hidden name="category" value="{{category}}" ng-model="test">
+<div class="messageArea" ng-if="!showRecipes">
+	<h3>{{message}}</h3>
+</div>
+<div class="recipe-media" ng-if="showRecipes" ng-repeat="x in recipes | filter:{category:test} | filter:recipeSearch">
+	<div class="graph">
+		<div class="home">
+			<div class="diffNum">{{x.difficulty}}</div>
+		</div><p>Difficulty (out of 5)<p>
+	</div>
+	<div style="background: url({{x.img}}) no-repeat center; 
+	background-size: 100% 100%;"
+	class="recipe-pic"></div>
+	<div data-id="{{x._id}}" class="directions">
+		<p>{{x.name | lowercase}}</p><hr>
+		<p><div style="color:black">Ingredients:</div> {{x.ingredients | lowercase}}</p>
+		<p><div style="color:black">Directions:</div> {{x.directions | lowercase}}</p>
+		<p><div style="color:black; display:inline-block">Cooking time:</div> {{x.cookingTime}} minutes</p>
+		<div><a href="#moreInfo/{{x._id}}" class="moreInfo">More Info</a></div><br/>
+		<a href="#delete/{{x._id}}" class="delete">Delete</a>
+		<a href="#edit/{{x._id}}" class="edit">Edit</a>
+	</div>
+</div>
+
+
+

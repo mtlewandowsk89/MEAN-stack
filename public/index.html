@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rookie Recipes</title>
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+  		<script src="src/main.js"></script>
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+		<header class="header"> 
+			<div class="logo hvr-underline-from-center"><a href="#/">Rookie Recipes</a></div>
+			<nav class="browse hvr-underline-from-center"><a href="#recipeList">Browse</a></nav>
+			<div>
+				<form  action="#" class="search">
+					<input ng-show="location.path() == '/recipeList'" type="search" ng-model="recipeSearch" id="search" placeholder="Search..." name="search">
+				</form>
+			</div>
+			<nav class="login"></nav>
+		</header>
+		<nav class="banner">
+			<a href="#cookware" class="hvr-bounce-in">Cookware</a>
+			<a href="#addRecipe" class="hvr-bounce-in">Add a recipe</a>
+			<a href="#aboutUs" class="hvr-bounce-in">About us</a>
+		</nav>
+
+		<div ng-view>
+		<!-- views go here -->
+		</div>
+
+		<footer>
+			<div class="copyright"> &#169; Copyright 2015 RookieRecipes.com | All Rights Reserved</div>
+			<div class="social"><i class="fa fa-facebook fa-lg"></i> | <i class="fa fa-google-plus fa-lg"></i> | <i class="fa fa-twitter fa-lg"></i> | <i class="fa fa-pinterest fa-lg"></i></div>
+		</footer>
+	</body>
+</html>

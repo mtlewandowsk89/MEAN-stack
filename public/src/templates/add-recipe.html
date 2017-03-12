@@ -1,0 +1,36 @@
+<img class="foodImage" src="./images/food.jpg">
+<h1 class="creation-title animated zoomIn">Tell us a little about your recipe</h1>
+<div class="recipe-add">
+	<form action="#recipeList" class="create" name="create" novalidate>
+		<label for="recipe-name">Recipe Name: </label>
+		<input type="text" ng-model="recipe.name" id="recipe-name" name="name" required><br>
+		<label for="protein">Protein Source: </label>
+		<select name="protein" ng-model="recipe.category" id="protein" required>
+			<option disabled selected value=""> select an option </option>
+			<option value="chicken">chicken</option>
+			<option value="beef">beef</option>
+			<option value="seafood">seafood</option>
+			<option value="vegetarian">vegetarian</option>
+			<option value="other">other</option>
+		</select><br>
+		<label for="ingredients">Ingredients (separated by commas): </label>
+		<input type="text" ng-model="recipe.ingredients" id="ingredients" name="ingredients" required></textarea><br>
+		<label for="directions">Directions: </label>
+		<input type="text" ng-model="recipe.directions" id="directions" name="directions" required></textarea><br>
+		<label for="cooking-time">Cooking Time</label>
+		<select name="cooking-time" ng-model="recipe.cookingTime" id="cooking-time" required>
+			<option disabled selected value=""> select an option </option>
+			<option value="0-10">0-10 minutes</option>
+			<option value="11-20">11-20 minutes</option>
+			<option value="21-30">21-30 minutes</option>
+			<option value="31-40">31-40 minutes</option>
+			<option value="41-50">41-50 minutes</option>
+			<option value="51-60">51-60 minutes</option>
+			<option value="over 60">Over 60 minutes</option>
+		</select><br>
+		<label for="difficulty">Difficulty (1 = easy, 5 = very difficult)</label>
+		<input type="number" ng-model="recipe.difficulty" min="1" max="5" id="difficulty" name="difficulty" step="1" required><br>
+		<button class="submit hvr-push" type="button" ng-disabled="create.$invalid" ng-click="addRecipe(recipe)">Submit</button>
+	</form>
+</div>
+

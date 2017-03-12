@@ -1,0 +1,961 @@
+/**********************
+		Reset
+**********************/
+
+html {
+    box-sizing: border-box;
+    min-width: 600px;
+    font-family: Montserrat;
+    font-size: 12pt;
+
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
+/**********************
+	Main page
+**********************/
+
+.header {
+	overflow: hidden;
+}
+
+.logo, .login {
+	float: left;
+	height: 75px;
+  	line-height: 75px;
+	text-align: center;
+}
+
+.logo {
+	background-color: rgb(130, 66, 30);
+	width: 20%;
+	color: white;
+	font-size: 28pt;
+	font-family: Lobster;
+}
+
+.browse {
+	float: left;
+	height: 75px;
+	text-align: center;
+	font-size: 20pt;
+	line-height: 75px;
+	width: 15%;
+	background-color: rgb(141, 99, 57);
+	color: white;
+}
+
+.browse a {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+#time {
+	width: 120px;
+	margin-top: 10px;
+	color: rgb(130, 66, 30);
+}
+
+.search {
+	float: left;
+	height: 75px;
+	text-align: center;
+	width: 40%;
+	background-color: rgb(184, 141, 99);
+}
+
+.search input {
+	padding: 0 10px;
+	width: 100%;
+	border: none;
+	height: 75px;
+	color: white;
+	font-size: 20pt;
+	background-color: rgb(184, 141, 99);
+}
+
+.sorry {
+	text-align: center;
+	font-size: 24pt;
+	margin-top: 110px;
+	color: white;
+}
+
+.contribute {
+	margin-top: -200px;
+	color: rgb(130, 66, 30);
+}
+
+.borderDiv {
+	margin: 0 auto;
+	padding: 0;
+	width: 1005px;
+	border: 3px solid black;
+}
+
+.hunger {
+	position: relative;
+    bottom: 200px;
+    z-index: -1;
+    height: 600px;
+    width: 1000px;
+    margin: auto;
+    padding: 10px 0;
+    right: 0px;
+    left: 0px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.login {
+	width: 25%;
+	background-color: rgb(184, 141, 99);
+	color: white;
+	font-size: 20pt;
+}
+
+.login a {
+	display: inline-block;
+}
+
+.banner {
+	background-color: white;
+	height: 65px;
+	color: rgb(130, 66, 30);
+}
+
+
+.hero {
+	height: 600px;
+	margin: 0 auto;
+	max-width: 1500px;
+	background-image: url("./images/kitchen.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcome {
+	float: left;
+	height: 75px;
+  	line-height: 75px;
+	text-align: center;
+	width: 25%;
+	background-color: rgb(192, 113, 68);
+	color: white;
+}
+
+.headline {
+	font-family: Montserrat;
+	font-size: 50pt;
+	color: white;
+	text-shadow: 0px 0px 20px black;
+	padding-top: 60px;
+	margin-left: 50px;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 36pt;
+}
+
+.peek {
+	margin-left: 100px;
+	margin-top: 250px;
+	border: 3px solid white;
+	border-radius: 50px;
+	background-color: none;
+	text-shadow: 0px 0px 20px black;
+	box-shadow: 0px 0px 20px black;
+	width: 200px;
+	height: 75px;
+	cursor: pointer;
+	color: white;
+	font-family: Montserrat;
+	font-size: 18pt;
+	text-align: center;
+}
+
+.carousel {
+	background-color: white;
+	height: 400px;
+	text-align: center;
+}
+
+.categories {
+	color: rgb(130, 66, 30);
+	text-align: center;
+	padding: 25px;
+	font-size: 22pt;
+}
+
+
+.tiles .chicken {
+	background-image: url("./images/chicken.jpg");
+	background-size: cover;
+}
+
+.tiles .beef {
+	background-image: url("./images/steak.jpg");
+	background-size: cover;
+}
+
+.tiles .seafood {
+	background-image: url("./images/seafood.jpg");
+	background-size: cover;
+}
+
+.tiles .pork {
+	background-image: url("./images/pork.jpg");
+	background-size: cover;
+}
+
+.tiles .vegetarian {
+	background-image: url("./images/salad.jpg");
+	background-size: cover;
+}
+
+.type {
+	background-color: rgb(184, 141, 99);
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.banner a {
+	height: 100px;
+	text-align: center;
+  	line-height: 65px;
+  	font-size: 18pt;
+	display: inline-block;
+	margin: 0px 11.1%;
+} 
+
+.image {
+	height: 210px;
+	background-position: center;
+	background-size: 210px 210px;
+}
+
+.tiles {
+	border: 3px solid rgb(184, 141, 99);
+	margin-left: 1.4%;
+	margin-bottom: 100px;
+	width: 210px;
+	box-shadow: 0px 0px 10px rgb(108, 67, 12);
+	display: inline-block;
+	color: white;
+}
+
+footer {
+	width: 100%;
+	background-color: rgb(184, 141, 99);
+	font-size: 18pt;
+	position:fixed;bottom:0;left:0;right:0;height:60px;
+	line-height: 60px;
+}
+
+.copyright {
+	float: left;
+	margin-left: 10px;
+	color: white;
+}
+
+.social {
+	float: right;
+	margin-right: 20px;
+	color: white;
+}
+
+/**********************
+  Responsive Main page
+**********************/
+
+@media (max-width: 1200px) {
+	.banner a {
+		height: 100px;
+		text-align: center;
+	  	line-height: 100px;
+	  	font-size: 16pt;
+		display: inline-block;
+		margin: 0px 10.2%;
+	} 
+
+	.browse {
+		font-size: 18pt;
+	}
+
+	.login {
+		font-size: 18pt;
+	}
+
+	.headline {
+		font-family: Montserrat;
+		font-size: 26pt;
+		color: white;
+		padding-top: 60px;
+		margin-left: 50px;
+	}
+	
+	.image {
+		height: 185px;
+		background-position: center;
+		background-size: 185px 185px;
+	}
+
+	.tiles {
+		margin-left: 0.6%;
+		width: 185px;
+		display: inline-block;
+		color: white;
+	}
+
+	.peek {
+		margin-left: 100px;
+		border: 1px solid white;
+		border-radius: 50px;
+		background-color: none;
+		width: 150px;
+		height: 50px;
+		cursor: pointer;
+		color: white;
+		font-family: Montserrat;
+		font-size: 14pt;
+		text-align: center;
+		margin-top: 300px;
+	}
+
+	.logo {
+		font-size: 24pt;
+	}
+}
+
+@media (max-width: 992px) {
+	.banner a {
+		height: 100px;
+		text-align: center;
+	  	line-height: 100px;
+	  	font-size: 14pt;
+		display: inline-block;
+		margin: 0px 9.8%;
+	} 
+
+	.browse {
+		font-size: 14pt;
+	}
+
+	.login {
+		font-size: 14pt;
+	}
+
+	.hero {
+		height: 600px;
+		background-image: url("./images/kitchen.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.image {
+		height: 140px;
+		background-position: center;
+		background-size: 140px 140px;
+	}
+
+	.tiles {
+		margin-left: 0.8%;
+		width: 140px;
+		display: inline-block;
+		color: white;
+	}
+
+	.logo {
+		font-size: 18pt;
+	}
+}
+
+@media (max-width: 768px) {
+	.banner a {
+		height: 100px;
+		text-align: center;
+		font-size: 12pt;
+	  	line-height: 100px;
+		display: inline-block;
+		margin: 0px 9%;
+	} 
+
+	.browse {
+		font-size: 12pt;
+	}
+
+	.login {
+		font-size: 12pt;
+	}
+
+	.dropdown {
+		font-size: 10pt;
+	}
+
+	.hero {
+		height: 600px;
+		background-image: url("./images/kitchen.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.image {
+		height: 110px;
+		background-position: center;
+		background-size: 110px 110px;
+	}
+
+	.tiles {
+		margin-left: 0.6%;
+		width: 110px;
+		display: inline-block;
+		color: white;
+	}
+
+	.logo {
+		font-size: 14pt;
+	}
+}
+
+/**********************
+  recipe-list template
+**********************/
+
+.recipe-media {
+	overflow: hidden;
+	height: 300px;
+	max-width: 1500px;
+	margin: 0 2% 70px 10%;
+}
+
+.diffNum {
+	color: #fff;
+	font-size: 32px;
+	border: 5px solid #fff;
+	width: 50px;
+	height: 50px;
+	margin: 40px auto 0 auto;
+	border-radius: 50%;
+}
+
+.graph, .recipe-pic, .directions {
+	float: left;
+	height: 300px;
+	border: 3px solid rgb(184, 141, 99);
+}
+
+.graph {
+	background-color: rgb(130, 66, 30);
+	width: 25%;
+	padding-top: 40px;
+	text-align: center;
+	border-right: none;
+}
+
+.graph p {
+	color: white;
+	font-size: 18pt;
+}
+
+.recipe-pic {
+	width: 300px;
+}
+
+.recipe-pic > img {
+	min-height: 40px;
+	min-width: 20px;
+	display: block;
+}
+
+.directions {
+	width: 40%;
+	height: 300px;
+	color: white;
+	font-size: 14pt;
+	padding: 10px;
+	background-color: rgb(184, 141, 99);
+	overflow-y: auto;
+	word-wrap: break-word;
+}
+
+.directions p:first-child {
+	text-align: center;
+	font-size: 24pt;
+	margin: 5px;
+	color: rgb(130, 66, 30);
+}
+
+.directions span {
+	padding: 1px;
+	margin-left: 66%;
+}
+
+.rate {
+	border: 1px solid white;
+	border-radius: 20px;
+	background-color: white;
+	width: 30%;
+	height: 20px;
+	cursor: pointer;
+	position: relative;
+	top: 84%;
+	left: 36%;
+}
+
+.edit {
+	margin-left: 50px;
+}
+
+.moreInfo {
+	border: 3px solid white;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.moreInfo:hover {
+	cursor: pointer;
+	color: rgb(130, 66, 30);
+}
+
+/**********************
+responsive recipe-list
+**********************/
+
+@media (max-width: 1200px) {
+	
+	.recipe-media {
+		font-size: 10pt;
+		overflow: hidden;
+		height: 200px;
+		margin: 0 4% 70px 10%;
+	}
+
+	.graph, .recipe-pic, .directions {
+		float: left;
+		height: 200px;
+		border: 3px solid rgb(184, 141, 99);
+	}
+
+	.graph {
+		background-color: rgb(130, 66, 30);
+		width: 25%;
+		text-align: center;
+		padding-top: 20px;
+		border-right: none;
+	}
+
+	.graph p {
+		color: white;
+		margin: 2px;
+		font-size: 14pt;
+	}
+
+	.recipe-pic {
+		width: 200px;
+	}
+
+	.directions p:first-child {
+		font-size: 20pt;
+	}
+
+	.directions {
+		width: 40%;
+		padding: 10px;
+		height: 200px;
+		font-size: 12pt;
+		color: white;
+		background-color: rgb(184, 141, 99);
+		overflow-y: auto;
+		word-wrap: break-word;
+	}
+
+	.directions p {
+		margin: 0;
+	}
+
+	.directions span {
+		margin-left: 50%;
+	}
+}
+
+@media (max-width: 992px) {
+	.recipe-media {
+		font-size: 10pt;
+		overflow: hidden;
+		height: 150px;
+		margin: 0 2% 70px 10%;
+	}
+
+	.diffNum {
+		margin: 25px auto 0 auto;
+	}
+
+	.graph, .recipe-pic, .directions {
+		float: left;
+		height: 150px;
+		border: 3px solid rgb(184, 141, 99);
+	}
+
+	.graph {
+		background-color: rgb(130, 66, 30);
+		width: 25%;
+		text-align: center;
+		padding-top: 10px;
+		border-right: none;
+	}
+
+	.graph p {
+		color: white;
+		margin: 0;
+		font-size: 12pt;
+	}
+
+	.directions {
+		width: 50%;
+		padding: 5px;
+		height: 150px;
+		font-size: 10pt;
+		color: white;
+		background-color: rgb(184, 141, 99);
+		overflow-y: auto;
+		word-wrap: break-word;
+	}
+
+	.directions p:first-child {
+		font-size: 20pt;
+	}
+
+	.recipe-pic {
+		width: 150px;
+	}
+
+	.directions p {
+		margin: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.recipe-media {
+		font-size: 8pt;
+		overflow: hidden;
+		height: 150px;
+		margin: 0 1% 70px 10%;
+	}
+
+	.diffNum {
+		margin: 20px auto 0 auto;
+	}
+
+	.graph, .recipe-pic, .directions {
+		float: left;
+		height: 150px;
+		border: 3px solid rgb(184, 141, 99);
+	}
+
+	.graph {
+		background-color: rgb(130, 66, 30);
+		width: 25%;
+		text-align: center;
+		padding-top: 15px;
+		border-right: none;
+	}
+
+	.graph p {
+		color: white;
+		margin: 5px;
+		font-size: 9pt;
+	}
+
+	.directions {
+		width: 40%;
+		padding: 5px;
+		color: white;
+		font-size: 10pt;
+		height: 150px;
+		background-color: rgb(184, 141, 99);
+		overflow-y: auto;
+		word-wrap: break-word;
+	}
+
+	.directions p:first-child {
+		font-size: 18pt;
+	}
+
+	.directions span {
+		margin-left: 50%;
+	}
+
+	.recipe-pic {
+		width: 150px;
+	}
+
+	.directions p {
+		margin: 0;
+	}
+}
+
+/**********************
+	about-us template
+**********************/
+
+.what-we-do, .origin, .firstFlip, .secondFlip, .thirdFlip, .messageArea {
+	text-align: center;
+	font-size: 32pt;
+	color: rgb(130, 66, 30);
+}
+
+.info-box {
+	padding: 10px;
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 100px;
+	box-shadow: 0px 0px 15px rgb(108, 67, 12);
+	background-color: rgb(184, 141, 99);
+	font-size: 26pt;
+	color: white;
+	position: relative;
+}
+
+.info-box > :first-child, .info-box > :last-child{
+	text-align: center;
+}
+
+.cookTools {
+	position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 50px;
+    width: 40%;
+    height: 30%;
+}
+
+.recommendations li:hover, .recommendations li.active{
+	cursor: pointer;
+	color: rgb(130, 66, 30);
+}
+
+.Flips {
+	text-align: center;
+	animation-delay: 12s;
+}
+
+.origin {
+	animation-delay: 2s;
+}
+
+.firstFlip {
+	animation-delay: 4s;
+}
+
+.secondFlip {
+	animation-delay: 6s;
+}
+
+.thirdFlip {
+	animation-delay: 8s;
+}
+
+/***********************************
+  add-recipe/login/signup templates
+***********************************/
+
+.recipe-add, .creation-title, .login-page{
+	text-align: center;
+	color: rgb(130, 66, 30);
+}
+
+.recipe-add, .login-page{
+    width: 300px;
+	position: relative;
+	overflow: hidden;
+	font-size: 12pt;
+    clear: both;
+    margin: auto;
+    display: block;
+}
+
+.formError {
+	color: red;
+	margin-top: 0;
+	display: none;
+}
+
+.recipe-add input, textarea, select, .login-page input{
+    margin-bottom: 20px;
+    width: 100%;
+    clear: both;
+    resize: none;
+     border: 5px solid rgb(184, 141, 99); 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.2),
+            0 0 16px rgba(0,0,0,0.2); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.2),
+            0 0 16px rgba(0,0,0,0.2); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.2),
+            0 0 16px rgba(0,0,0,0.2); 
+    padding: 8px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 12px 0;
+    font-size: 18pt;
+}
+
+.submit {
+	border: 1px solid rgb(184, 141, 99);
+	width: 100px;
+	height: 40px;
+	font-family: Montserrat;
+	background-color: rgb(184, 141, 99);
+	font-size: 14pt;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.foodImage {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+/**********************
+	Angular classes
+**********************/
+
+input.ng-valid, select.ng-valid {
+	border-color: #5cb85c;
+}
+
+button:disabled {
+	cursor: not-allowed;
+}
+
+/******************
+	Hover.css
+******************/
+
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: white;
+  height: 10px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.hvr-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
